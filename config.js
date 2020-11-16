@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'vagabond95 devlog',
+  title: '김지훈 개발블로그',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
