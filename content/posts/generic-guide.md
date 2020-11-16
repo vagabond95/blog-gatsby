@@ -4,6 +4,8 @@ date: 2020-07-31 18:04:19
 category: "java"
 template: "post"
 description: "제네릭을 활용할 일이 많은데 겉핥기 식으로만 알고 있다는 생각이 들어 이번 기회에 관련 내용들을 정리했다."
+redirect_from:
+  - /2020/07/31/generic_guide/
 ---
 ![](/media/cover/generic_guide.jpg)
 제네릭을 활용할 일이 많은데 겉핥기 식으로만 알고 있다는 생각이 들어 이번 기회에 관련 내용들을 정리했다.

@@ -4,6 +4,8 @@ date: 2019-11-03 18:12:30
 category: "git"
 template: "post"
 description: "git rebase 이슈"
+redirect_from:
+  - /2019/11/03/git-rebase-onto/
 ---
 
 # 문제 상황

@@ -7,6 +7,8 @@ description: "Android 진영에서 작성되는 대부분의 단위 테스트는
 tags: 
     - JUnit
     - Test
+redirect_from:
+  - /2020/11/01/android_with_junit5/
 ---
 ![cover](/media/cover/junit5.png)
 

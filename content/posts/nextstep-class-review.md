@@ -9,6 +9,8 @@ tags:
   - TDD
   - Clean code
   - Refactoring
+redirect_from:
+  - /2019/11/23/nextstep-class-review/
 ---
 # 코드에 대한 고민, Next  Step
 

@@ -6,6 +6,8 @@ template: "post"
 description: "MVVM 기반으로 프로젝트를 진행할 때 팀 내에서 가장 많은 논의가 오고 갔던 부분은 역시 ViewModel 이었다."
 tags: 
     - MVVM
+redirect_from:
+  - /2020/06/07/viewmodel_public_method/
 ---
 MVVM 기반으로 프로젝트를 진행할 때 팀 내에서 가장 많은 논의가 오고 갔던 부분은 역시 ViewModel 이었다. 이번 글은 그 중 ViewModel 의 public 메소드에 대하여  적어보려 한다.
 

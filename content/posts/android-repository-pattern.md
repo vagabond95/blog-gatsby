@@ -6,6 +6,8 @@ template: "post"
 description: "공식문서에서도 가이드 하는 것 처럼 이제 Android 아키텍처를 구성할 때 Repository 패턴은 기본적으로 사용 되고있다."
 tags: 
     - 아키텍쳐
+redirect_from:
+  - /2020/05/24/android_repository_pattern/
 ---
 [공식 문서](https://developer.android.com/jetpack/docs/guide?hl=ko#overview)에서도 가이드 하는 것 처럼 이제 Android 아키텍처를 구성할 때 Repository 패턴은 기본적으로 사용 되고있다. 오늘은 Repository 패턴에 대한 간단한 정리와 사용하면서 내가 놓치고 있었던 점에 대하여 정리 해보려한다.
 

@@ -8,6 +8,8 @@ description: "한번도 NullPointerException (이하 NPE)를 겪어보지 않�
 tags: 
   - Java
   - Library
+redirect_from:
+  - /2018/09/21/what-is-nullaway/
 ---
 
 한번도 **NullPointerException** (이하 NPE)를 겪어보지 않은 사람은 있을지 몰라도, 한번만 NPE 를 겪어본 사람은 없을것이다. NPE 로 인한 크래시가 나기 전까지는 그 존재를 알 수 없기 때문에 항상 Null 값 처리를 신경 쓰면서 개발을 진행해야 한다. 잊을만하면 나타나는 NPE를 바라보면서 한숨을 쉬고 있을 때쯤, 동료 개발자에게 미리 NPE 예방에 도움을 주는 [Nullaway](https://github.com/uber/NullAway) 라이브러리를 소개받았다.

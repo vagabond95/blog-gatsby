@@ -8,6 +8,8 @@ tags:
   - 리엑티브 프로그래밍
   - RxJava
   - 병렬 처리
+redirect_from:
+  - /2019/08/10/is-this-rxjava-2/
 ---
 
 RxJava 의 큰 장점 중 하나는 무엇이든 Observable 소스로 추상화하고, 이를 제공되는 Operation을 이용하여 손쉽게 가공할 수 있다는 점이다. 안드로이드 개발 중 가장 흔하게 접할 수 있는 케이스로는 Retrofit - RxJava 조합을 이용한 API 통신이 있다. 

@@ -6,6 +6,8 @@ template: "post"
 description: "코드 리뷰어 활동을 제안 받게 되었다."
 tags: 
     - java 8
+redirect_from:
+  - /2020/04/25/nextstep_reviewer_review/
 ---
 작년 하반기에 Nextstep 의 [클린코드 교육과정을 참여](https://vagabond95.me/nextstep-class-review/)하며 배웠던 내용을 바탕으로 많은 성장을 할 수 있었다. 좋은 수업이라며 주위에 열심히 홍보를 하던 찰나, 과정을 직접 운영하고 계시는 박재성님으로부터 코드 리뷰어 활동을 제안 받게 되었다. 
 

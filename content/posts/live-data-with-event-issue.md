@@ -7,6 +7,8 @@ description: "이번 포스트에서는 MVVM 아키텍처에서 LiveData 를 사
 tags: 
     - 리엑티브 프로그래밍
     - MVVM
+redirect_from:
+  - /2020/03/13/live_data_with_event_issue/
 ---
 ![cover](/media/cover/live_data_with_event_cover.jpg)
 이번 포스트에서는 MVVM 아키텍처에서 LiveData 를 사용하면서 겪었던 어려움과 여러 해결방법에 대해 적어보려한다. MVVM 에 대한 좋은 글은 이미 많이 있으므로 해당 포스트에서는 생략하고 넘어간다! 

@@ -5,6 +5,8 @@ category: "Android"
 template: "post"
 draft: false
 description: "며칠 전부터 이슈트래킹 대시보드에서 아래 에러가 빈번하게 리포트되는 일을 겪었다."
+redirect_from:
+  - /2018/06/13/text_is_selectable_issue/
 ---
 
 ## 발단

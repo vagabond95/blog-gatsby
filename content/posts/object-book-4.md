@@ -8,6 +8,8 @@ tags:
   - OOP
   - Book review
   - Clean code
+redirect_from:
+  - /2019/10/20/object-book-4/
 ---
 
 이번 글에서는 데이터 중심 클래스의 정의와 단점을 알아보고, 이를 해결하기 위한 방법으로 캡슐화와 응집도/결합도에 대한 완전한 이해를 얻어가는 것이 목적이다.

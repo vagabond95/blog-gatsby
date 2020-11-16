@@ -6,6 +6,8 @@ template: "post"
 description: "자바 8에서 추가된 람다식에는 다음과 같은 규칙이 존재한다."
 tags: 
     - java 8
+redirect_from:
+  - /2020/09/28/lambda_with_effectively_final/
 ---
 ![](/media/cover/lambda_with_effectively_final.jpg)
 자바 8에서 추가된 람다식에는 다음과 같은 규칙이 존재한다.

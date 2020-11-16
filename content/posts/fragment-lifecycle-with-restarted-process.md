@@ -6,6 +6,8 @@ template: "post"
 description: "최근에도 큰 규모의 리펙토링을 진행했는데, Fragment 생명주기에 대한 지식이 부족하여 많은 이슈를 발생시켰다. 😭 이번 포스팅에서는 해당 이슈의 원인과 해결법에 대해 적어보려 한다."
 tags: 
     - Fragment
+redirect_from:
+  - /2020/02/23/fragment_lifecycle_with_restarted_process/
 ---
 ![cover](/media/cover/bike_cover.jpg)
 

@@ -4,6 +4,8 @@ date: 2020-04-12 16:32:12
 category: "android"
 template: "post"
 description: "간단해 보이는 요구 사항, 삽질의 시작"
+redirect_from:
+  - /android_not_working_ellipsize_with_autolink_or_movementmethod/
 ---
 ![cover](/media/cover/ellipsis_not_working_cover.jpeg)
 

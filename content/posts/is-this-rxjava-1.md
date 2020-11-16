@@ -7,6 +7,8 @@ description: "구글은 점점 더 안드로이드 아키텍처를 리엑티브�
 tags: 
   - 리엑티브 프로그래밍
   - RxJava
+redirect_from:
+  - /2019/07/20/is-this-rxjava-1/
 ---
 
 구글은 점점 더 안드로이드 아키텍처를 리엑티브하게 구조화 하려는 움직임을 보이고 있고, Databinding, LiveData 그리고 RxJava 는 그러한 구조화 작업의 핵심 토대를 담당하고 있다. 또한 주력으로 사용되는 Retroift 부터 AAC 의 Room, Paging 에 이르기까지 많은 안드로이드 라이브러리가 RxJava 를 지원하고 있다. 

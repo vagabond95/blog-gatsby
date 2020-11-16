@@ -6,6 +6,8 @@ template: "post"
 draft: false
 description: "Android 개발을 진행하다보면 Keyboard Height 를 알고싶은 상황을 마주할 때가 있다. 하지만 안타깝게도 Android에서 Keyboard Height 를 알 수 있는 native API 는 제공되지 않는다."
 socailImage: "/media/cover/android-keyboard-height-cover.jpg"
+redirect_from:
+  - /2019/09/08/android-keyboard-height/
 ---
 ![cover](/media/cover/android-keyboard-height-cover.jpg)
 Android 개발을 진행하다보면 Keyboard Height 를 알고싶은 상황을 마주할 때가 있다. 하지만 안타깝게도 **Android에서 Keyboard Height 를 알 수 있는 native API 는 제공되지 않는다.**  따라서 약간의 편법(?)을 통해 값을 알아내야 하는데, 오늘 포스팅에서는 그 과정을 다뤄보려 한다.

@@ -7,7 +7,8 @@ draft: false
 description: "안드로이드에서 제공하는 알림(Notification) 은 강력한 기능들을 제공하고 있다. 그리고 매번 API 버전이 올라갈 때마다 빈번하게 Update 가 되는 녀석이기 때문에 계속해서 주시하고 있어야하는 놈이기도 하다. 그동안 아무생각없이 copy & paste 만 하면서 사용하고 있던 스스로를 돌아보며 다시한번 알림의 전반적인 사용방법에 대해 정리하고자 포스트를 적었다."
 tags: 
   - oreo
-
+redirect_from:
+  - /2018/04/19/notification-with-oreo/
 ---
 ## **들어가며**
 

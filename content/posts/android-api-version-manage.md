@@ -4,7 +4,8 @@ date: 2019-09-20 18:35:05
 category: "Android"
 template: "post"
 description: "프로젝트를 새롭게 세팅 할 때 기본적으로 다음 세가지 값을 기본적으로 지정하곤 한다. 세팅 이후에는 크게 건드릴 일이 없기에 평소에는 크게 신경쓰이지 않는 값이다. "
-
+redirect_from:
+  - /2019/09/20/android-api-version-manage/
 ---
 프로젝트를 새롭게 세팅 할 때 기본적으로 다음 세가지 값을 기본적으로 지정하곤 한다. 세팅 이후에는 크게 건드릴 일이 없기에 평소에는 크게 신경쓰이지 않는 값이다. 
 * targetSdkVersion 
