@@ -213,6 +213,13 @@ module.exports = {
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-netlify-cms-paths',
     {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "ca-pub-5033331279793069",
+        head: false // Optional
+      }
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.vagabond95.me',
