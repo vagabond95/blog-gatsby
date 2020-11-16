@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://vagabond95.me',
   pathPrefix: '/',
   title: '김지훈 개발블로그',
   subtitle: '',
@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       label: 'About',
-      path: '/about'
+      path: '/pages/about'
     }
   ],
   author: {
