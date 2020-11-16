@@ -2,11 +2,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Author from './Author';
-import Comments from './Comments';
 import Content from './Content';
+import Utterance from './Utterance';
 import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
+import {useRef, useEffect} from 'react';
 import type { Node } from '../../types';
 
 type Props = {
@@ -17,6 +18,23 @@ const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
+  const commentBox = React.createRef()
+
+  useEffect(() => {
+    const scriptEl = document.createElement('script')
+    scriptEl.async = true
+    scriptEl.src = 'https://utteranc.es/client.js'
+    scriptEl.setAttribute('repo', 'creativcoder/creativcoder.dev-comments')
+    scriptEl.setAttribute('issue-term', 'title')
+    scriptEl.setAttribute('id', 'utterances')
+    scriptEl.setAttribute('theme', 'github-light')
+    scriptEl.setAttribute('crossorigin', 'anonymous')
+    if (commentBox && commentBox.current) {
+      commentBox.current.appendChild(scriptEl)
+    } else {
+      console.log(`Error adding utterances comments on: ${commentBox}`)
+    }
+  }, [])
 
   return (
     <div className={styles['post']}>
@@ -32,9 +50,10 @@ const Post = ({ post }: Props) => {
         <Author />
       </div>
 
-      <div className={styles['post__comments']}>
-        <Comments postSlug={slug} postTitle={post.frontmatter.title} />
+      <div className={styles['comment']}>
+        <Utterance commentBox={commentBox} />
       </div>
+      
     </div>
   );
 };

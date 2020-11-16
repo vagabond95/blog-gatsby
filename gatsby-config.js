@@ -120,6 +120,7 @@ module.exports = {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
+          'gatsby-plugin-netlify-cms-paths',
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -186,7 +187,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/media/icon/me.png'
       },
     },
     'gatsby-plugin-offline',
@@ -209,6 +210,15 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-    'gatsby-plugin-optimize-svgs'
+    'gatsby-plugin-optimize-svgs',
+    'gatsby-plugin-netlify-cms-paths',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.vagabond95.me',
+        sitemap: 'https://www.vagabond95.me/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ]
 };
