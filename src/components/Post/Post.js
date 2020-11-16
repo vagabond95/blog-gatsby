@@ -24,8 +24,8 @@ const Post = ({ post }: Props) => {
     const scriptEl = document.createElement('script')
     scriptEl.async = true
     scriptEl.src = 'https://utteranc.es/client.js'
-    scriptEl.setAttribute('repo', 'creativcoder/creativcoder.dev-comments')
-    scriptEl.setAttribute('issue-term', 'title')
+    scriptEl.setAttribute('repo', 'vagabond95/blog-comments')
+    scriptEl.setAttribute('issue-term', 'pathname')
     scriptEl.setAttribute('id', 'utterances')
     scriptEl.setAttribute('theme', 'github-light')
     scriptEl.setAttribute('crossorigin', 'anonymous')
@@ -34,7 +34,7 @@ const Post = ({ post }: Props) => {
     } else {
       console.log(`Error adding utterances comments on: ${commentBox}`)
     }
-  }, [])
+  }, []);
 
   return (
     <div className={styles['post']}>
