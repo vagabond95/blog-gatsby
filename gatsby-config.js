@@ -219,6 +219,8 @@ module.exports = {
         sitemap: 'https://www.vagabond95.me/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    'gatsby-redirect-from',
+    'gatsby-plugin-meta-redirect' // make sure this is always the last one
   ]
 };
