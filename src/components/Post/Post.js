@@ -9,6 +9,7 @@ import Tags from './Tags';
 import styles from './Post.module.scss';
 import {useRef, useEffect} from 'react';
 import type { Node } from '../../types';
+import AdSense from './AdSense/AdSenseBottom';
 
 type Props = {
   post: Node
@@ -50,6 +51,8 @@ const Post = ({ post }: Props) => {
         <Author />
       </div>
 
+      <AdSense />
+      
       <div className={styles['comment']}>
         <Utterance commentBox={commentBox} />
       </div>
