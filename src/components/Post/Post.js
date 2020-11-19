@@ -7,9 +7,10 @@ import Utterance from './Utterance';
 import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
-import {useRef, useEffect} from 'react';
 import type { Node } from '../../types';
 import AdSense from './AdSense/AdSenseBottom';
+import Utterances from './Utterance/Utterance';
+
 
 type Props = {
   post: Node
@@ -19,23 +20,6 @@ const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
-  const commentBox = React.createRef()
-
-  useEffect(() => {
-    const scriptEl = document.createElement('script')
-    scriptEl.async = true
-    scriptEl.src = 'https://utteranc.es/client.js'
-    scriptEl.setAttribute('repo', 'vagabond95/blog-comments')
-    scriptEl.setAttribute('issue-term', 'pathname')
-    scriptEl.setAttribute('id', 'utterances')
-    scriptEl.setAttribute('theme', 'github-light')
-    scriptEl.setAttribute('crossorigin', 'anonymous')
-    if (commentBox && commentBox.current) {
-      commentBox.current.appendChild(scriptEl)
-    } else {
-      console.log(`Error adding utterances comments on: ${commentBox}`)
-    }
-  }, []);
 
   return (
     <div className={styles['post']}>
@@ -51,10 +35,12 @@ const Post = ({ post }: Props) => {
         <Author />
       </div>
 
-      <AdSense />
-      
+      <div className="bottom-ad">
+        <AdSense />
+      </div>
+
       <div className={styles['comment']}>
-        <Utterance commentBox={commentBox} />
+        <Utterances />
       </div>
       
     </div>

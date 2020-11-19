@@ -1,7 +1,34 @@
-import {useRef, useEffect} from 'react'
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby'
+import React, { createRef, useLayoutEffect } from 'react';
 
-const Comment = ({commentBox}) => (<div ref={commentBox} className="comments"></div>)
+const src = 'https://utteranc.es/client.js';
+const repo = 'vagabond95/blog-comments';
 
-export default Comment
+const Utterances = React.memo(() => {
+    const containerRef = createRef();
+
+    useLayoutEffect(() => {
+        const utterances = document.createElement('script');
+
+        const attributes = {
+            src,
+            repo,
+            'issue-term': 'pathname',
+            label: 'comment',
+            theme: 'github-light',
+            crossOrigin: 'anonymous',
+            async: 'true',
+        };
+
+        Object.entries(attributes).forEach(([key, value]) => {
+            utterances.setAttribute(key, value);
+        });
+
+        containerRef.current.appendChild(utterances);
+    }, [repo]);
+
+    return <div ref={containerRef} />;
+});
+
+Utterances.displayName = 'Utterances';
+
+export default Utterances;
