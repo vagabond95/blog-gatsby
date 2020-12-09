@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://vagabond95.me',
   pathPrefix: '/',
-  title: '김지훈 개발블로그',
+  title: '기록은 기억을 지배한다',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
