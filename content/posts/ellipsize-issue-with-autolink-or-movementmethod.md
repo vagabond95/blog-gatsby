@@ -88,7 +88,9 @@ if (mText instanceof Spannable) {
 }
 ```
 
-이전 단락에서 autoLink 혹은 movementMethod 를 사용했을 경우 mText 는 spannable 로 포장된다고 한 것을 떠올려 보자. 그런데 mText 가 spannable 일 경우 Layout 은 DynamicLayout 으로 생성된다. DynamincLayout 은 내부적으로 StaticLayout 을 이용하여 Text 를 렌더링하는데, **이때 StaticLayout 에 mMaximumVisibleLineCount 값을 따로 설정 해주지 않는 특징이 있다**. mMaximumVisibleLineCount 는 디폴트 값인 Integer.MAX_VALUE 으로 초기화 된다. 따라서 보여줄 수 있는 line 의 수가 의미상 무한대에 가까우므로 ellipsis 는 표현되지 않는다. 
+이전 단락에서 autoLink 혹은 movementMethod 를 사용했을 경우 mText 는 spannable 로 포장된다고 한 것을 떠올려 보자. 그리고 mText 가 spannable 일 경우 Layout 은 DynamicLayout 으로 생성된다.  
+DynamincLayout 은 내부적으로 StaticLayout 을 이용하여 Text 를 렌더링하는데, **이때 StaticLayout 에 mMaximumVisibleLineCount 값을 따로 설정 해주지 않는 특징이 있다**. 즉, mMaximumVisibleLineCount 는 디폴트 값인 Integer.MAX_VALUE 으로 초기화 된다.   
+따라서 보여줄 수 있는 line 의 수가 의미상 무한대에 가까우므로 ellipsis 는 표현되지 않는다. 
 
 # 원인 정리
 

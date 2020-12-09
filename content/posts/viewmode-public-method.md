@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
 class MyViewModel {
 
     public void loadUserCategory() {
-			// Call API
+		// Call API
     }
 		
-		public void deleteAllCategory() {
-      // Delete all
-		}
-
+	public void deleteAllCategory() {
+        // Delete all
+	}
+}
 ```
 
 ## 문제점
@@ -89,21 +89,21 @@ public class MainActivity extends AppCompatActivity {
 ```java
 class MyViewModel {
 
-		public void onEnterView() {
-				loadUserCategory();
+	public void onEnterView() {
+		loadUserCategory();
     }
 
     public void onClickDeleteAllButton() {
-				deleteAllCategory();
+		deleteAllCategory();
     }
 
     private void loadUserCategory() {
-			// Call API
+		// Call API
     }
 		
-		private void deleteAllCategory() {
+	private void deleteAllCategory() {
       // Delete all
-		}
+	}
 }
 ```
 
