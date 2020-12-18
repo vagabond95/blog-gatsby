@@ -1,5 +1,5 @@
 ---
-title: "left, right, top, bottom 의 모든 것"
+title: "[Android] left, right, top, bottom 에 대하여"
 date: 2020-12-18 16:42:27
 draft: false
 category: "Android"
