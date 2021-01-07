@@ -3,7 +3,7 @@ title: 동시성(Concurrency) 과 병렬성 (Parallelism) 올바른 개념 잡�
 date: 2021-01-07 22:43:41
 category: "CS"
 template: "post"
-description: "여유롭게 지나갈 줄 알았지만 폭풍같았던 2월이었다. 바빴던 만큼 깨달은 내용이 많아 짧게 정리했다."
+description: "처음에 접하면 항상 헷갈리기 쉬운 동시성(Concurrency) 과 병렬성(Parallelism) 에 대해 정리해보고자 한다. "
 ---
 
 처음에 접하면 항상 헷갈리기 쉬운 동시성(Concurrency) 과 병렬성(Parallelism) 에 대해 정리해보고자 한다. 
