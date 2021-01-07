@@ -34,6 +34,7 @@ Repository 는 DataSource 를 캡슐화 한다. 이점은 다음과 같다.
 Andorid 진영에서는 아래 구조를 크게 벗어나지 않는다.
 
 > View → Presenter / ViewModel → **Repository** → DataSource (API, Local DB)
+![repository](//media/post/repository_pattern/repo1.png)
 
 간단한 형태로 구현된 예시는 다음과 같다.
 
