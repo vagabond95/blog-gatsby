@@ -16,6 +16,8 @@ redirect_from:
 - Repository 패턴의 궁극적인 목적은 결국 관심사의 분리다.
 - DataSource 외에 data 에 대한 분리도 필요하다.
 
+## Clean Architecture 연계 내용 추가 (2021.05.01)
+
 # Repository 패턴을 사용하는 이유
 
 > Repositories are classes or components that encapsulate the logic required to access data sources.
@@ -145,6 +147,18 @@ public class UserMapper {
 # 결론
 
 다양한 아키텍처, 패턴을 공부하다 보면 결국 변경하기 쉬운 구조를 만들기 위한 여러 시도들이라고 생각된다. 단순히 패턴의 단면만을 보고 큰 고민없이 사용하는 것이 아니라 그속에 담겨있는 핵심을 잘 이해하고 사용하는 것이 중요하다는 것을 다시금 깨닫게 된다.
+
+# CleanArchitecture 보강 내용 (2021.05.01)
+
+최근 대부분 프로젝트에서 Clean Architecture 도입을 추진하고 있어 이를 기준으로 게시글 내용일부 보강하고자 한다.
+
+Repository 패턴이 구현된 위 구조에서 추가되는 내용은 Domain 계층의 등장이며, UseCase / 도메인 모델, Mapper 등을 포함하고 있다.
+
+Clean Architecture 를 strict 하게 지킨다면 각 계층간 통신시 데이터는 계층에 맞게 변환되어야 한다. 이를 위 케이스에서 대입해보면 Data 계층 (Data source) 에서 Domain 계층으로 데이터가 이동할 때 Mapper 를 통해 POJO (json parse 용) 를 도메인 모델로 바꾸는 과정이 필요하다. 
+
+이 과정에서도 위에서 다룬 것과 마찬가지로 N 개의 POJO 타입이 있다면, N 개의 도메인 모델의 매핑과정이 필요하므로 전체적인 코드량은 늘어날 수 있다. Glue 코드 라고 느껴질수도 있으나, 도메인 계층 모델의 설계를 서버가 아닌 클라입장에서 컨트롤 할 수 있다는 측면에서 감수할만한 트레이드 오프라고 생각한다.
+
+좀 더 자세한 내용은 Clean Architecture 를 다룬 아티클에서 다시 다뤄보려한다.
 
 ## Ref :
 
